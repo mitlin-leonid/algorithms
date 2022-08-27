@@ -11,11 +11,14 @@ def bubble_sort(A):
 
     Суть в том, что пузырек движеться вверх
     """
+    count = 0
     N = len(A)
     for bypass in range(1, N):
         for k in range(0, N-bypass):
             if A[k] > A[k+1]:
                 A[k], A[k+1] = A[k+1], A[k]
+            count += 1
+    print('длина последовательности', N, 'количество проходов', count)
 
 def test_bubble_sort(sort_algorithm):
     print("testcase#1 ", end="")
@@ -40,5 +43,5 @@ def test_bubble_sort(sort_algorithm):
 
 
 
-#if __name__ == "__main__":
-test_bubble_sort(bubble_sort)
+if __name__ == "__main__":
+    test_bubble_sort(bubble_sort)
