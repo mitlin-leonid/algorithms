@@ -1,4 +1,4 @@
-def insert_sort(array):
+def insertion_sort(array):
     """
     Алгоритм сортировки вставками
     1. берется первый элемент и он считается уже "отсортированным массивом"
@@ -17,7 +17,7 @@ def insert_sort(array):
             array[k], array[k-1] = array[k-1], array[k]
             k -= 1
 
-def test_insert_sort(sort_algorithm):
+def test_insertion_sort(sort_algorithm):
     print("testcase#1 ", end="")
     A1 = [4, 2, 5, 1, 3]
     A1_sorted = [1, 2, 3, 4, 5]
@@ -41,4 +41,4 @@ def test_insert_sort(sort_algorithm):
 
 
 if __name__ == "__main__":
-    test_insert_sort(insert_sort)
+    test_insertion_sort(insertion_sort)
