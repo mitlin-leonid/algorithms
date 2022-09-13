@@ -10,9 +10,11 @@ def choice_sort(A):
     """
     N = len(A)
     for pos in range(N-1):
+        min = pos
         for i in range(pos + 1, N):
-            if A[i] < A[pos]:
-                A[i], A[pos] = A[pos], A[i]
+            if A[i] < A[min]:
+                min = i
+        A[min], A[pos] = A[pos], A[min]
 
 
 def test_choice_sort(sort_algorithm):
