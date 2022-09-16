@@ -41,9 +41,28 @@ def merge_sort(A):
         A[i] = C[i]
 
 
+def test_merge_sort(sort_algorithm):
+    print("testcase#1 ", end="")
+    A1 = [4, 2, 5, 1, 3]
+    A1_sorted = [1, 2, 3, 4, 5]
+    sort_algorithm(A1)
+    print("Ok" if A1 == A1_sorted else "fail")
 
-A = [4, 5, 2, 1]
+    print("testcase#2 ", end="")
+    A2 = list(range(10, 20)) + list(range(0, 10))
+    A2_sorted = list(range(20))
+    sort_algorithm(A2)
+    print("Ok" if A2 == A2_sorted else "fail")
 
-merge_sort(A)
+    print("testcase#3 ", end="")
+    A3 = [4, 2, 2, 1, 4]
+    A3_sorted = [1, 2, 2, 4, 4]
+    sort_algorithm(A3)
+    print("Ok" if A3 == A3_sorted else "fail")
 
-print(A)
+
+
+
+
+if __name__ == "__main__":
+    test_merge_sort(merge_sort)
