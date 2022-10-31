@@ -8,11 +8,7 @@ from email.mime.text import MIMEText
 
 
 
-me = 'mitlinleonid@gmail.com'
-me2 = 'mitlinleonid@liceyklassic.ru'
-password = 'CikjG6NiHtmawG1986'
-password_2 = 'sonar078111986'
-password_1 = 'pcxvmplounbgtfju'
+
 
 email_getter = 'mitlinleonid@yandex.ru'
 
