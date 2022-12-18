@@ -39,7 +39,8 @@ for row in range(0, N): # Заполняем массив размерность
     for col in range(0, N):
         A[row].append(rn.uniform(1, 10))
 
+B = [[1,2,3, 5],[4,4,2,4],[5,1,3,10]]
 
-print_mas(A) # выводим на экран массив
-print(det(A)) # выводим на экран определитель матрицы
-print(np.linalg.det(A)) # Проверка
+print_mas(B) # выводим на экран массив
+print(det(B)) # выводим на экран определитель матрицы
+print(np.linalg.det(B)) # Проверка
